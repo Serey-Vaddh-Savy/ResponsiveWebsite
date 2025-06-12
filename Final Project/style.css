@@ -1,0 +1,278 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body{
+    background-color: #797777;
+    min-width: 500px;
+}
+
+header, nav, main, aside, footer{
+    background-color: #ffffff;
+}
+header{
+    background-color: #9a9a9a;
+    display: flex;
+    gap: 1em;
+    height: 80px;
+    align-items: center;
+}
+
+
+nav ol{
+    list-style: none;
+    text-align: center;
+}
+
+nav li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid black;
+    
+
+}
+nav li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+}
+nav li:first-child{
+    border-top:1px solid black;
+    }
+
+nav li:hover{
+    background-color: #9a9a9a;
+    color: #ffffff;
+}
+
+
+main {
+    padding:5%;
+    background-color: #6a6a6a;
+
+}
+
+#heading{
+
+    width: 120px;
+    height: 80px;
+}
+
+aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+aside img{
+    display: none;
+}
+aside p{
+    padding: 10px;
+}
+
+#placeholder{
+    width: 300px;
+    height: auto;
+    margin: 25px;
+    
+}
+
+footer{
+    border-top: 1px solid black;
+    padding: 1em 0;
+    text-align: center;
+    background-color: #9a9a9a;
+}
+
+.countryLink{
+    padding-left: 20px;
+}
+
+
+label{
+    display: block;
+    padding: 3px;
+    
+}
+
+input{
+    padding: 3px;
+    display: flex;
+}
+.radio{
+    display: flex;
+}
+
+
+.block{
+    display: block;
+}
+
+.tourInfo h2{
+    text-align: center;
+}
+
+.tourInfo img,.country img{
+    display: block;
+    height:200px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+caption{
+    padding-top: 20px;
+}
+
+table {
+    margin: 0 auto; 
+    justify-content: center; 
+    border-collapse: collapse; 
+}
+
+table, th,td{
+    border: 1px solid black;
+}
+th,td{
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+aside img, main img {
+    transition: transform 0.3s ease-in-out; 
+}
+aside img:hover, main img:hover {
+    transform: scale(1.05); 
+}
+
+
+@media screen and (min-width: 680px) {
+    body{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "main aside"
+        "footer footer";
+    }
+    header{
+        grid-area: header;
+    }
+    nav{
+        grid-area: nav;
+        
+    }
+    main{
+        grid-area: main;
+        background-color: white;
+    }
+    aside{
+        grid-area: aside;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #6a6a6a;
+        justify-content: flex-start;
+    }
+    footer{
+        grid-area: footer;
+    }
+    #heading{
+
+        width: 150px;
+        height: 100px;
+    }
+
+    nav ol{
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid black;
+        background-color: #6a6a6a;
+    }
+    nav li{
+        border: none;
+    }
+    aside img{
+        width: 100px;
+        display: block;
+    }
+    .tourInfo img{
+        height:300px;
+        width: 450px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 150px 2fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "header header header"
+            "nav main aside"
+            "footer footer footer";
+        min-height: 100vh;
+    }
+    h2{
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    h3{
+        padding-bottom: 0.2em;
+        padding-top: 0.5em;
+    }
+    nav{
+        grid-area: nav; 
+        background-color: #6a6a6a;
+        height: 100%;
+    }
+
+    nav ol {
+        
+        display: block;
+        border: none;
+    }
+
+    nav li {
+        display: block;
+        
+    }
+
+    aside{
+        grid-area: aside;
+        background-color: #6a6a6a;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        
+        
+        
+    }
+
+    aside img {
+        margin-bottom: 20px;
+        width: 300px;
+
+    }
+    main img{
+        width: 450px;
+        height: 300px;
+        
+    }
+    
+}
+
+
+
+

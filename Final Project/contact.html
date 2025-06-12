@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img id="heading" src="tour.jpg" alt="">
+        <h1 class="companyName">Advantour Inc</h1>
+    </header>
+    <nav>
+        <ol>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="tour.html">Tour</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+        </ol>
+    </nav>
+    <main>
+        
+        <h1>Contact us for your Dream Vacations</h1>
+        <p>Please read each statement carefully and consider each one individually. <span class="bold">Use the</span> 
+        form options to make your choice.</p>
+        <form action="">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="Name" class="block">Name: </label>
+                <input type="text" id="Name" name="Name">
+                <label for="email" class="block">Email: </label>
+                <input type="email" id="email" name="email">
+                <label for="phone" class="block">Phone Number: </label>
+                <input type="tel" id="phone" name="phone">
+
+            </fieldset>
+            <fieldset>
+                
+                <legend>Student Feedback</legend>
+                <label class="block">Season</label>
+                <div class="radio">
+                    <input type="radio" id="winter" name="semester">
+                    <label for="winter">Winter</label>
+                    <input type="radio" id="springOrSummer" name="semester">
+                    <label for="springOrSummer">Spring/Summer</label>
+                    <input type="radio" id="fall" name="semester">
+                    <label for="fall">Fall</label>
+                </div>
+                <label for="effectiveness" class="block">Vacation Type</label>
+                <select id="effectiveness">
+                    <option value="modern">Modern</option>
+                    <option value="fun">Fun</option>
+                    <option value="culture">Cultural</option>
+                </select>
+
+                <label for="helpfulness" class="block">Choose your level of helpfulness:</label>
+                <input type="text" list="helpfulness-list" name="helpfulness" id="helpfulness">
+
+                <datalist id="helpfulness-list">
+                    <option value="Under $500">
+                    <option value="$500-$1000">
+                    <option value="$1000-$2000">
+                    <option value="$2000+">
+                </datalist>
+
+                <label for="comments" class="block">Do you have any other comments?</label>
+                <textarea name="comments" id="comments"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Form Submission</legend>
+
+                <input type="submit" name="submit" id="submit">
+
+                
+                <input type="reset" name="reset" id="reset">
+            </fieldset>
+        </form>
+    </main>
+    <aside>
+        <img src="me.jpg" alt="Picture of Serey Vaddh" id="placeholder">
+        <p>Phone: (416) 111-2345</p>
+        <p>Email: sereyvaddh.savy@gmail.com</p>
+    </aside>
+    <footer>
+        <p>Thank You</p>
+    </footer>
+</body>
+</html>
